@@ -1,4 +1,4 @@
-package com.practice.code.String;
+package com.practice.code.string;
 
 public class HelloWorld {
     public static void main(String[] args) {
