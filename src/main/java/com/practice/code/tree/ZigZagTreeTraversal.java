@@ -22,8 +22,8 @@ public class ZigZagTreeTraversal {
         LinkedList<Integer> result = new LinkedList<>();
         while (!queue.isEmpty()) {
             TreeNode curr = queue.poll();
-            if (height % 2 == 0) result.addFirst(curr.value);
-            else result.add(curr.value);
+            if (height % 2 == 0) result.addFirst(curr.val);
+            else result.add(curr.val);
             nodeToVisit--;
             if (curr.left != null) {
                 queue.offer(curr.left);

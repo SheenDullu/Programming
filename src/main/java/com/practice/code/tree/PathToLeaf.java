@@ -13,7 +13,7 @@ public class PathToLeaf {
         Stack<TreeNode> stack = new Stack<>();
         Stack<Integer> leftSum = new Stack<>();
         stack.push(root);
-        leftSum.push(sum - root.value);
+        leftSum.push(sum - root.val);
 
         TreeNode curr;
         int currSum;
@@ -26,11 +26,11 @@ public class PathToLeaf {
 
             if (curr.right != null) {
                 stack.push(curr.right);
-                leftSum.push(currSum - curr.right.value);
+                leftSum.push(currSum - curr.right.val);
             }
             if (curr.left != null) {
                 stack.add(curr.left);
-                leftSum.add(currSum - curr.left.value);
+                leftSum.add(currSum - curr.left.val);
             }
 
         }

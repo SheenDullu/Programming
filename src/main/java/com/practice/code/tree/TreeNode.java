@@ -1,7 +1,7 @@
 package com.practice.code.tree;
 
 public class TreeNode {
-    int value;
+    int val;
     TreeNode left;
     TreeNode right;
 
@@ -9,11 +9,11 @@ public class TreeNode {
     }
 
     public TreeNode(int node) {
-        this.value = node;
+        this.val = node;
     }
 
     public TreeNode(int node, TreeNode left, TreeNode right) {
-        this.value = node;
+        this.val = node;
         this.left = left;
         this.right = right;
     }
